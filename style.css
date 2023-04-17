@@ -17,9 +17,6 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
-    scroll-behavior: smooth;
-}
 
 p {
     font-size: 1.6rem;
@@ -202,10 +199,60 @@ p {
     height: 100%;
     object-fit: cover;
 }
+/* Ideas */
+#ideas{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 6rem 0;
+    background-color: #1111;
+}
+.ideas-header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 1000px;
+    margin-bottom: 4rem;
+}
+.ideas-header h1{
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+.ideas-header p{
+    color: #1f1f1f;
+}
+.ideas{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-bottom: 4rem;
+}
+.ideas-box{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-align: left;
+    padding: 0 2rem;
+    width: 300px;
+}
+.ideas-box h1{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
 
 @media screen and (max-width:1250px) {
     .recipe {
         width: 100%;
+    }
+    .ideas-box {
+        width: 250px;
+    }
+    .ideas-header {
+        width: 90%;
     }
 }
 
@@ -218,6 +265,13 @@ p {
 @media screen and (max-width:1100px) {
     .hero h1 {
         font-size: 6rem;
+    }
+    .ideas {
+      flex-wrap: wrap;
+    }
+    .ideas-box {
+        width: 40%;
+        margin: 3rem 0;
     }
 }
 
@@ -243,6 +297,9 @@ p {
         width: auto;
         padding: 0 3rem;
     }
+    .ideas-box {
+        width: 50%;
+    }
 }
 
 @media screen and (max-width:700px) {}
@@ -266,11 +323,20 @@ p {
         width: 90%;
         height: auto;
     }
+    .ideas-box {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width:400px) {
     .cards-box {
         width: 90%;
+    }
+    .ideas-box {
+        width: 95%;
+    }
+    .ideas-header h1 {
+        font-size: 3rem;
     }
 }
 
