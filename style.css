@@ -243,6 +243,46 @@ p {
     font-size: 2rem;
     margin-bottom: 2rem;
 }
+/* Snacks */
+#snacks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+}
+.snacks{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.snacks-box{
+    width: 256px;
+    height: 280px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2rem 1.5rem;
+    padding: 1.5rem;
+}
+.snacks-box:nth-child(2) , .snacks-box:nth-child(4){
+    border: 3px solid #bfa065;
+}
+.snacks-box h1{
+    font-size: 2.3rem;
+}
+.snacks-box p{
+    margin-top: 2rem;
+}
+.snacks-box-img{
+    background-image: url(https://images01.nicepage.com/a2/fc/a2fc4ef890f44fa0a9bb7787ce17008d.jpeg);
+    background-position: center;
+    background-size: cover;
+}
+.snacks-box-img:nth-child(3){
+    background-image: url(https://images01.nicepage.com/62/43/6243854162c536333ab218a58996077f.jpeg);
+}
 
 @media screen and (max-width:1250px) {
     .recipe {
@@ -259,6 +299,9 @@ p {
 @media screen and (max-width:1200px) {
     .hero h1 {
         font-size: 7rem;
+    }
+    .snacks-box {
+        width: 210px;
     }
 }
 
@@ -283,6 +326,9 @@ p {
     .hero {
         width: 90%;
     }
+    .snacks-box{
+        width: 350px;
+    }
 }
 
 @media screen and (max-width:900px) {
@@ -300,13 +346,23 @@ p {
     .ideas-box {
         width: 50%;
     }
+    .snacks-box{
+        width: 300px;
+    }
 }
 
-@media screen and (max-width:700px) {}
+@media screen and (max-width:700px) {
+    .snacks-box{
+        width: 45%;
+    }
+}
 
 @media screen and (max-width:600px) {
     .hero h1 {
         font-size: 4rem;
+    }
+    .snacks-box{
+        width: 90%;
     }
 }
 
